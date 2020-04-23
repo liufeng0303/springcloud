@@ -15,7 +15,7 @@ spring:
       defaultZone:  http://localhost:8761/eureka/
 
 rabbitmq: 
-  host: localhost
+  host: 192.168.230.200
   port: 5672
   username: guest
   password: guest
