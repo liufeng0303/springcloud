@@ -65,6 +65,7 @@ public class ProductViewServiceFeignApplication {
 		new SpringApplicationBuilder(ProductViewServiceFeignApplication.class).properties("server.port=" + port)
 				.run(args);
 	}
+
 	@Bean
 	public Sampler defaultSampler() {
 		return Sampler.ALWAYS_SAMPLE;
