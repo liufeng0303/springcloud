@@ -14,4 +14,5 @@ public class ProductClientFeignHystrix implements ProductClientFeign {
 		result.add(new Product(0, "产品数据微服务不可用", 0));
 		return result;
 	}
+
 }
