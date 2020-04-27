@@ -12,13 +12,14 @@ import cn.hutool.core.util.NetUtil;
 @EnableEurekaClient
 @EnableDiscoveryClient
 public class ProductServiceZuulApplication {
-	public static void main(String[] args) {
-    	int port = 8040;
-		if(!NetUtil.isUsableLocalPort(port)) {
-			System.err.printf("端口%d被占用了，无法启动%n", port );
-    		System.exit(1);
-    	}
-        new SpringApplicationBuilder(ProductServiceZuulApplication.class).properties("server.port=" + port).run(args);
 
+	public static void main(String[] args) {
+		int port = 8040;
+		if (!NetUtil.isUsableLocalPort(port)) {
+			System.err.printf("端口%d被占用了，无法启动%n", port);
+			System.exit(1);
+		}
+		new SpringApplicationBuilder(ProductServiceZuulApplication.class).properties("server.port=" + port).run(args);
 	}
+
 }
